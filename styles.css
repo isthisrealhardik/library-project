@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 50px;
+}
+#Card {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 225px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+#Name {
+    text-align: start;
+    margin: 0;
+}
+#Author, #Pages, #Name, #Options {
+    margin: 10px 0px;
+}
+#Name::before {
+    content: 'Name:';
+    color: grey;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#Author::before {
+    content: 'Author:';
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+#Pages::before {
+    content: 'Pages';
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Add {
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* margin: 0px 10px; */
+    /* margin-left: 10px; */
+    padding: 5px 10px;
+}
+label {
+    margin: 0px 10px;
+}
+button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    box-shadow: none;
+    border: none;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+#submit {
+    margin: 0px 10px;
+}
+button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+select {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border: none;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+#Status-Add {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border: none;
+    font-size: 15px;
+    margin: 0px 10px;
+    transition: all 0.3s;
+}
+#Add-Name, #Add-Author, #Add-Pages, #Add-Status {
+    margin: 0px 10px;
+}
+select:hover, #Status-Add:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}

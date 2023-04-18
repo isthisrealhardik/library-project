@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    <title>Library</title>
+</head>
+<body>
+    <!-- card -->
+    <div id="Card">
+        <h1 id="Name">The Metamorphosis</h1>
+        <h2 id="Author">Franz Kakfa</h2>
+        <h3 id="Pages">70</h3>
+        <div id="Options">
+            <select name="Status" id="Status">
+                <option value="Read">Read</option>
+                <option value="To Read">To Read</option>
+                <option value="Reading">Reading</option>
+            </select>
+            <button id="Remove">Remove</button>
+        </div>
+    </div>
+    <!-- add -->
+    <div id="Add">
+        <div id="Add-Name">
+            <label for="Name">Name:</label>
+            <input type="text" id="NameInput" placeholder="Name of your book?">
+        </div>
+        <div id="Add-Author">
+            <label for="Author">Author</label>
+            <input type="text" id="AuthorInput" placeholder="Author of your book?">
+        </div>
+        <div id="Add-Pages">
+            <label for="Pages">Pages</label>
+            <input type="text" id="PagesInput" placeholder="How many pages it has?">
+        </div>
+        <div id="Add-Status">
+            <label for="Status">Status</label>
+            <select name="Status" id="Status-Add">
+                <option value="Read">Read</option>
+                <option value="To Read">To Read</option>
+                <option value="Reading">Reading</option>
+            </select>
+        </div>
+        <button id="submit">Add</button>
+    </div>
+    <!-- script -->
+    <script src="/script.js"></script>
+</body>
+</html>
