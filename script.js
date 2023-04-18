@@ -99,8 +99,6 @@ library.map(book => {
     status.append(optionRead)
     status.append(optionReading)
     status.append(optionToRead)
-
-    // status.style.marginRight = '5px';
     
     status.value = book.status;
     
